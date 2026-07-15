@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>📈 ForecastBench</h1>
+<h1> ForecastBench</h1>
 <h3>Classical vs GenAI Demand Forecasting for Retail Supply Chains</h3>
 <p><em>A rigorous, evidence-first benchmark — not another notebook that picks a model and calls it done.</em></p>
 
@@ -29,7 +29,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Problem Statement](#-problem-statement)
 - [Why This Project Is Different](#-why-this-project-is-different)
@@ -46,7 +46,7 @@
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Retailers lose money two ways: **stockouts** (lost sales, unhappy customers) and
 **overstocking** (tied-up capital, waste). Both come down to the same root cause —
@@ -57,7 +57,7 @@ production. This project asks a specific, answerable question:
 > model actually outperform a well-tuned classical statistical model — or is that
 > assumption untested hype?**
 
-## 🧭 Why This Project Is Different
+##  Why This Project Is Different
 
 Most forecasting portfolios do one of two things: pick a model and report an accuracy
 number, or pick the newest model because it's newest. This project does neither.
@@ -74,7 +74,7 @@ number, or pick the newest model because it's newest. This project does neither.
 - **Every experiment is logged**, not just the final one — via MLflow — so the
   comparison is reproducible, not anecdotal.
 
-## 🗂 Dataset
+##  Dataset
 
 > _Fill in once finalized:_
 - **Source:** [dataset name / link]
@@ -82,7 +82,7 @@ number, or pick the newest model because it's newest. This project does neither.
 - **Granularity:** weekly units sold per store-SKU combination
 - **Time range:** [start] – [end]
 
-## 🏗 Pipeline Architecture
+##  Pipeline Architecture
 
 ```
                          ┌─────────────────────────┐
@@ -123,7 +123,7 @@ number, or pick the newest model because it's newest. This project does neither.
                           └─────────────────────┘
 ```
 
-## 🧪 Methodology
+##  Methodology
 
 | Stage | What Happens | Why It Matters |
 |---|---|---|
@@ -135,14 +135,14 @@ number, or pick the newest model because it's newest. This project does neither.
 | **6. Evaluation** | MAE, SMAPE, CFE, PIS, MAR, 8-window rolling CV | Measures both accuracy *and* reliability under stockout risk |
 | **7. Tracking** | MLflow logs params, metrics, model artifacts per run | Reproducibility — a forecast without a logged run is a guess |
 
-## 📊 Results
+##  Results
 
 | Model       | MAE ↓ | SMAPE ↓ | Cross-Val MAE ↓ | Cross-Val Std ↓ |
 |-------------|:-----:|:-------:|:----------------:|:----------------:|
 | MSTL        | X.XX  | X.X%    | X.XX             | X.XX             |
 | TimeGPT     | X.XX  | X.X%    | X.XX             | X.XX             |
 
-## 💡 Key Takeaway
+##  Key Takeaway
 
 > _Fill in with your real, specific finding, e.g.:_
 > "MSTL outperformed TimeGPT by X% on cross-validated MAE, with a tighter and more
@@ -152,18 +152,18 @@ number, or pick the newest model because it's newest. This project does neither.
 > advantage likely emerges more clearly on sparse or irregular series with little
 > historical depth, which is a distinction worth testing in future iterations."
 
-## 🧩 Skills Demonstrated
+##  Skills Demonstrated
 
 `Time-series forecasting` · `Statistical modeling (MSTL, ARIMA)` · `Generative AI / LLM-based forecasting (TimeGPT)`
 `Geospatial analysis` · `Inventory optimization` · `Rolling cross-validation design`
 `Production ML practices (MLflow)` · `Honest model evaluation under multiple metrics`
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 `Python` · `pandas` · `geopandas` · `statsforecast` (MSTL, AutoARIMA) · `Nixtla TimeGPT`
 `scikit-learn` · `MLflow` · `Jupyter Notebook`
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 git clone https://github.com/<your-username>/forecastbench.git
@@ -175,7 +175,7 @@ echo "NIXTLA_API_KEY=your_key_here" > .env
 jupyter notebook ForecastBench.ipynb
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 forecastbench/
@@ -188,7 +188,7 @@ forecastbench/
 └── README.md
 ```
 
-## 🔮 What I'd Do With More Time
+##  What I'd Do With More Time
 
 - Test both models on a sparser, lower-history dataset to see if TimeGPT's advantage
   emerges under different data conditions
