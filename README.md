@@ -198,6 +198,3 @@ forecastbench/
 
 ---
 
-<div align="center">
-<sub>Built by <a href="#">Your Name</a> · <a href="#">LinkedIn</a> · <a href="#">Portfolio</a></sub>
-</div>
